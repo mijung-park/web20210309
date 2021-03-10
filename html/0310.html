@@ -1,0 +1,34 @@
+<html>
+<body>
+    <h1>div는 p의 묶음을 포괄하는 하나의 문단으로 생각하면 됨</h1>
+    <hr>
+    <h1>class</h1>
+    <p>여러개의 div를 같은 특징으로 묶어 효과를 줄 수 있음</p>
+    <style>
+        .may {color:navy; background-color: yellowgreen;}
+        .heesoo {font-weight:bold; text-decoration: underline; color:green}
+    </style>
+    <div class="may">Lorem, ipsum dolor.</div>
+    <div class="heesoo">Consectetur, dolor hic.</div>
+    <div class="may">Vero, necessitatibus quisquam.</div>
+    <div class="heesoo">Lorem, ipsum dolor.</div>
+    <hr>
+    <h1>span</h1>
+    <p>inline에서 특정 단어에만 효과를 줄 수 있음</p>
+    <div>Lorem 
+        <span style="background-color: black; color:white">ipsum</span>
+         dolor sit amet.</div>
+    <div>Exercitationem, tempora 
+        <span style="border: 2px solid orangered;">numquam.</span>
+         Delectus, cum.</div>
+         <hr>
+         <h1>ID</h1>
+         <style>
+             #mj {color:purple}
+             #hs {font-weight: bold;}
+         </style>    
+         <p>div 각각에 고유한 효과를 줌(따라서 각 div가 고유한 이름을 가짐)</p>
+         <div id="mj">Lorem, ipsum dolor.</div>
+         <div id="hs">Consectetur, dolor hic.</div>
+</body>
+</html>
