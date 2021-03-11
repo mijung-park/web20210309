@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            position: relative
+        }
+        h1 {
+            position: absolute;
+            left:0;
+            top:0;
+            background-color: black;
+            color: white;
+        }
+        #div1 >h1 {
+            opacity: 0.5;
+        }
+        /* opacity는 elem 전체의 투명도 */
+        #div2 >h1{
+            background-color: rgba(0,0,0,0.5);
+        }
+        /* rgba의 alpha는 background의 투명도 */
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <img src="../html/댕댕.jpg" alt="">
+        <!-- ..은 상위폴더로 이동. 상위폴더이동하여 html안의 파일-->
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+    <div id="div2">
+        <img src="../html/댕댕.jpg" alt="">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+
+</body>
+
+</html>
