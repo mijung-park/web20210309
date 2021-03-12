@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body, html {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        #percent {
+            font-size: 100%;
+        }
+        /* 부모 elem 기준의 % */
+        .em {
+            font-size: 0.75em;
+        }
+        /* 1em=100% */
+        .rem {
+            font-size: 0.75rem;
+        }
+        /* 루트 elem 기준 */
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi odio aspernatur natus alias officia ipsa possimus. Veritatis, sapiente? Est, deserunt nesciunt. Voluptatum dolor repellendus nesciunt reprehenderit minima, facilis esse.</p>
+    <p id="percent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam eligendi ipsum quasi repudiandae. Voluptate exercitationem non eligendi. Quae atque ab, aut, non fugiat aperiam sunt, rem assumenda pariatur repellendus aliquam.</p>
+    <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi, repudiandae reprehenderit sint numquam quidem impedit ducimus deserunt dolor magni veritatis exercitationem error ratione labore reiciendis soluta! Perspiciatis, ullam suscipit!</p>
+    <div class="em">
+        <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur asperiores neque repellat, fugiat quia, iusto aliquam velit ea alias commodi libero perspiciatis sint consectetur repellendus sequi optio ratione? Cumque.</p>
+    </div>
+    <!-- div의 size는 부모인 body의 .75 / p의 size는 부모인 div의 .75 -->
+    <div class="rem">
+        <p class="rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestias dicta! Molestiae at quas quod eligendi ipsum quibusdam veniam atque praesentium dolores rem error qui magnam nam expedita, commodi distinctio!</p>
+    </div>
+</body>
+
+</html>
