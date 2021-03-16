@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="all.min.js"></script>
+    <style>
+        .hi {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .hello {
+            display: flex;
+
+        }
+
+        .hello>p:nth-child(2) {
+            border: 20px 30px;
+            border-radius: 5px;
+            background-color: green;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+
+        }
+
+        .main {
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        .main:hover {
+            background-color: green;
+        }
+
+        .css {
+            list-style-type: none;
+            padding: 0%;
+            background-color: rgb(236, 234, 234);
+            width: 180px;
+        }
+
+        .content:hover {
+            background-color: rgb(147, 161, 173);
+        }
+
+        .ad {
+        display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hi">
+        <div class="hello">
+            <p style="font-size: 30px; color:rgb(70, 70, 70);">w3schools<span style="color:green">.com</span></p>
+        </div>
+        <div class="hello">
+            <p>THE WORLD'S LARGEST WEB DEVELOPER SITE
+            </p>
+            <p>Log IN</p>
+        </div>
+
+    </div>
+    <div class="navbar">
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-bars"></i></div>
+            <div class="main"><i class="fas fa-home"></i></div>
+            <div class="main">HTML</div>
+            <div class="main">CSS</div>
+            <div class="main">JAVASCRIPT</div>
+            <div class="main">MORE <i class="fas fa-caret-down"></i></div>
+
+        </div>
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-adjust"></i></div>
+            <div class="main"><i class="fas fa-globe-americas"></i></div>
+            <div class="main"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <div class="css">
+        <p style="font-weight: bold; font-size: 20px;"> CSS Tutorial</p>
+        <div class="content">CSS HOME</div>
+        <div class="content">CSS Introduction</div>
+        <div class="content">CSS Syntax</div>
+        <div class="content">CSS Selectors</div>
+        <div class="content">CSS How To</div>
+        <div class="content">CSS Comments</div>
+        <div class="content">CSS Colors</div>
+        <div class="content">CSS Backgrounds</div>
+        <div class="content">CSS borders</div>
+        <div class="content">CSS margins</div>
+        <div class="content">CSS Padding</div>
+        <p style="font-weight: bold; font-size: 20px; color:rgb(147, 161, 173);"> Advertisement</p>
+        <div class="ad">
+            <p>advertisement<img src="../html/댕댕.jpg" alt=""></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
