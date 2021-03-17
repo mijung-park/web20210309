@@ -18,12 +18,14 @@
         var c = document.getElementById("input1");
         if (c.value.length < 5) { var a = document.getElementById("alert1");
        a.innerHTML = "아이디가 너무 짧습니다.";
-       a.style.color = "red"; }
+       a.style.color = "red";
+       a.style.fontSize = "20px"; }
 
        else {
        var b = document.getElementById("alert1");
        b.innerHTML = "올바른 아이디 입니다.";
-       b.style.color = "green";}
+       b.style.color = "green";
+       b.style.fontSize = "10px";}
 
     }
 </script>
@@ -32,6 +34,9 @@
     var a = document.getElementById("may");
 </script>
 <button type="button" onclick="document.getElementById('may').innerHTML='Mezzang!'">
+    Click Me !
+</button>
+<button type="button" onclick="document.getElementById('may').style.color='hotpink'">
     Click Me !
 </button>
 </body>
