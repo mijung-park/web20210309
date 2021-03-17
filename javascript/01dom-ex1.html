@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <h1>Finding HTML Elements by Id.</h1>
+    <p id="intro"> Hello World! </p>
+    <p>This example is first para. Second para will be have Hello World!</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var myElement = document.getElemntByid("intro");
+        document.getElementById("demo").innerHTML =
+         "This is second para" + myElement.innerHTML;
+    </script>
+
+</body>
+
+</html>
