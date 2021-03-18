@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        #icon1 {
+            font-size: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    이미지 바꾸기
+    <br>
+    <input onkeyup="touch()" type="text" id="input1">
+    <div><i class="fas fa-home" id="icon1"></i></div>
+    <script>
+
+        function touch() {
+            var home = document.getElementById("input1").value;
+            make(home);
+        }
+
+        function make(iconName) {
+            document.getElementById("icon1").className = iconName;
+        }
+    </script>
+
+</body>
+<hr>
+<body>
+계산기 만들기
+<br>
+<input type="text" id="may1">
+<br>
+<input type="text" id="may2">
+<br>
+<button onclick="add()" id="button"><i class="fas fa-plus"></i></button>
+<button onclick="minus()" id="button"><i class="fas fa-minus"></i></button>
+<button onclick="times()" id="button"><i class="fas fa-times"></i></button>
+<button onclick="divide()" id="button"><i class="fas fa-divide"></i></button>
+
+<p id="result"></p>
+
+<script>
+
+    function add(params) {
+        var a = document.getElementById("may1").value;
+        var b = document.getElementById("may2").value;
+        document.getElementById("result").innerHTML = Number(a) + Number(b);
+    }
+
+    function minus(params) {
+        var a = document.getElementById("may1").value;
+        var b = document.getElementById("may2").value;
+        document.getElementById("result").innerHTML = a - b;
+    }
+    function times(params) {
+        var a = document.getElementById("may1").value;
+        var b = document.getElementById("may2").value;
+        document.getElementById("result").innerHTML = a * b;
+
+    }
+    function divide(params) {
+        var a = document.getElementById("may1").value;
+        var b = document.getElementById("may2").value;
+        document.getElementById("result").innerHTML = a / b;
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
