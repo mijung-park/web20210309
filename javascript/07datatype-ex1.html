@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<script>
+    //number
+    var a = 34;
+    var b = 3.14;
+
+    //string (문자열 text는 ""를 사용해야함. 안그러면 변수로 인지함. ''사용가능)
+    var c = "javascript";
+    var d = 'java';
+    var e = "it's java"; //안에 '를 사용할경우 "를 이용
+    var f = 'name="May"'; //안에 "를 사용할경우 '를 이용
+    var g = 'it\'s java'; //안에 '를 이용하고 밖에도 이용할 경우 안에 '이용전 \입력
+    var h = "name=\"may\""
+
+    var i = "3"; //3은 ""안에 있기 때문에 문자로 인식
+    var j = 3;
+    var k = "4";
+    var l = 4;
+    //문자&문자
+    console.log(i + k); //+는 문자가 포함될경우 연결연산으로 인식. 나머지는 숫자가 있으면 알아서 숫자로 변환
+    console.log(i - k);
+    console.log(i * k);
+    console.log(i / k);
+
+    //문자&숫자
+    console.log(i + l);
+    console.log(i - l);
+    console.log(i * l);
+    console.log(i / l);
+</script>
+</body>
+</html>

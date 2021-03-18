@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../css/all.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <br>
+    <input type="text" id="input2">
+    <br>
+    <button onclick="add()" id="button"><i class="fas fa-plus"></i></button>
+    <button onclick="minus()" id="button"><i class="fas fa-minus"></i></button>
+    <button onclick="times()" id="button"><i class="fas fa-times"></i></button>
+    <button onclick="divide()" id="button"><i class="fas fa-divide"></i></button>
+    <!-- onclick이 버튼을 눌렀을때 명령이 발생하도록함. ()는 함수를 불러오는 호출기호 -->
+
+    <p id="result"></p>
+
+    <script>
+
+        function add(params) {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var c = Number(a);
+            var d = Number(b);
+            document.getElementById("result").innerHTML = c + d;
+        }
+        function add(params) {
+            var a = Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+               document.getElementById("result").innerHTML = a + b;
+        }
+        function add(params) {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+               document.getElementById("result").innerHTML = Number(a) + Number(b);
+        }
+        //add(+)는 연결 연산으로 인식하기 때문에 숫자로 변환하는 Number 함수를 이용해 숫자로 변환해줘야함
+        // 위의 3가지 모두 a와 b를 숫자로 변환해준 방법. 편한방법 이용하면 됨.
+
+        function minus(params) {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a - b;
+        }
+        function times(params) {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a * b;
+
+        }
+        function divide(params) {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a / b;
+        }
+
+
+    </script>
+</body>
+
+</html>
