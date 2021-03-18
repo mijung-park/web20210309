@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+<script>
+    var a = 3;
+
+    //parameter : 매개변수, 인자, 인수
+    function func1(params) {
+        console.log("func1 function");
+        console.log(params);
+    }
+    //params 호출할때 넣어준 argument로 인지해서 출력
+    //argument : 매개값, 인자, 인수
+    func1(99);
+
+    //parameter는 0개 이상 가능
+    function func2() {
+        console.log("func2 function");
+    }
+    func2(99); //params가 없으면 호출되지 않음.(호출될 매개가 없음)
+
+    function func3(param1, param2) {
+        console.log("func3 function");
+        console.log(param1);
+        console.log(param2);
+    }
+    func3(55, "may");
+    func3(55);
+    func3();
+
+    function func4(param1, param2, param3) {
+    console.log("mezzang");
+    console.log(param1);
+    console.log(param2);
+    console.log(param3);
+    }
+    func4(0,0,"may")
+
+</script>
+</body>
+
+</html>
