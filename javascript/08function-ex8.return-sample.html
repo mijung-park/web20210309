@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input onkeyup="mezzang()" type="text" id="input1">
+
+    <p id="result"></p>
+
+    <script>
+        function heesoo(v) {
+            return v * 2;
+        }
+
+        function mezzang() {
+            var may = document.getElementById("input1").value;
+            var r = heesoo(may);
+            document.getElementById("result").innerHTML = r;
+        }
+    </script>
+</body>
+
+</html>

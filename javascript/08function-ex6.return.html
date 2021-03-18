@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function myFunc(params) {
+            console.log("abc");
+            console.log("def");
+            
+            //1. 함수종료
+            return;
+
+            console.log("hij"); //return으로 이미 함수가 종료되었기 때문에 얘는 실행되지 않음.
+        }
+
+        function myFunc2() {
+            console.log("123");
+            console.log("456");
+
+            //2. 키워드 오른쪽 값을 호출한 곳으로 반환(return)
+            return 777;
+        }
+
+        
+    </script>
+</body>
+
+</html>
