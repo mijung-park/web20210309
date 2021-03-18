@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <button onclick="changeImage(this)" id="button1">베들링턴</button>
+    <button onclick="changeImage(this)" id="button2">웰시</button>
+    <button onclick="changeImage(this)" id="button3">진도</button>
+    <button onclick="changeImage(this)" id="button4">치와와</button>
+    <hr>
+    <img src="" alt="" id="img1">
+
+    <script>
+        function changeImage(may) {
+            document.getElementById("img1").src = may.innerHTML + ".jpg";
+        }
+    </script>
+</body>
+
+</html>
