@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    var car = {
+        weight: 800,
+        color: "White"
+    };
+    console.log(car.weight);
+    console.log(car["weight"]); //.property명을 .대신 []안에 넣어줄 수 있음. 대신 string으로 표현해야함.
+    
+    console.log(car.color);
+    console.log(car["color"]);
+
+    car["color"] = "red";
+    console.log(car.color);
+    console.log(car["color"]);
+
+</script>
+</body>
+</html>

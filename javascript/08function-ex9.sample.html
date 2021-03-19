@@ -16,7 +16,7 @@
     <br>
     섭씨 :
     <input type="text" readonly="readonly" id="input2">
-
+    
     <script>
         function toCelsius(fahrenheit) {
             return (5 / 9) * (fahrenheit - 32);
@@ -30,7 +30,7 @@
             //toCelsius 함수를 위에서 얻은 값을 인수로 넣어서 호출한 결과를
             //celsius 변수에 할당한다.
             var b = toCelsius(a);
-            document.getElementById("input2").value = b;
+            document.getElementById("result").value = b;
         }
     </script>
 </body>
