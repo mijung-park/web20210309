@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    function start() {
+        console.log(this.name + "가 출발합니다.");
+    }
+    // this 는 그 이름값을 가진 모든 객체의 자신을 의미함. 따라서 car의 start도, kar의 start도 적용됨.
+    var car = {
+        name: "fiat",
+        start: start
+    }
+    var kar = {
+        name: "volvo",
+        start: start
+    }
+    car.start();
+    kar.start();
+</script>
+</body>
+</html>
