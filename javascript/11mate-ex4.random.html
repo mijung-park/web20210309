@@ -24,7 +24,7 @@
     <div id="result1"></div>
     <script>
         function randomNumer() {
-            var ran = Math.floor(Math.random()*45) + 1;
+            var ran = Math.floor(Math.random()*46) +1; //+1이 없으면 소수점을 버리기 때문에 0이 나올 수 있음
             document.getElementById("result1").innerHTML = ran;
         }
 

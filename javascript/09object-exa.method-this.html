@@ -10,17 +10,17 @@
     function start() {
         console.log(this.name + "가 출발합니다.");
     }
-    // this 는 그 이름값을 가진 모든 객체의 자신을 의미함. 따라서 car의 start도, kar의 start도 적용됨.
+    // this 는 그 이름값을 가진 모든 객체의 자신을 의미함. 따라서 car의 start도, kar의 start도
     var car = {
         name: "fiat",
-        start: start
+        w: start
     }
     var kar = {
         name: "volvo",
-        start: start
+        w: start
     }
-    car.start();
-    kar.start();
+    car.w();
+    kar.w();
 </script>
 </body>
 </html>
