@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+    
+<script>
+    //indexOf 0을 시작으로 (시작) 하는 지점의 수를 가져옴
+    var str = "Lorem ipsum dolor sit amet.";
+    var idx = str.indexOf("ipsum");
+
+    console.log(idx);
+
+    //Slice (시작,끝)의 값을 가져옴. 마지막 끝은 빼고 그 전 까지만.
+    var res = str.slice(12,17);
+    console.log(res);
+    console.log(str.slice(12));
+
+    //substring
+    var res2 = str.substring(12,17);
+    console.log(res2);
+    console.log(str.substring(5));
+
+    //substr (시작,글자수) 시작점부터의 글자수를 가져옴
+    var res3 = str.substr(12,5);
+    console.log(res3);
+    console.log(str.substr(12));
+</script>
+</body>
+</html>
