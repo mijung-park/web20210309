@@ -8,21 +8,21 @@
 </head>
 
 <body>
-    Greeting <input type="">
+    Greeting <input type="text">
     <br>
-    <button onclick="click()">Click me !</button>
-    <p id="may">sdf</p>
+    <button onclick="time()">Hello!</button>
+    <br>
+    <p id="may"></p>
     <script>
-
-        function click(parmas) {
+        function time(params) {
             var time = document.querySelector("input").value;
-            time = Number(time);
+            time = Number(time)
 
-            if (time >= 90) {
+            if (time >= 6 && time < 13) {
                 document.getElementById("may").innerHTML = "Good Morning";
-            } else if (time >= 80) {
+            } else if (time >= 13 && time < 18) {
                 document.getElementById("may").innerHTML = "Good Evening";
-            } else {
+            } else if ((time >= 18 && time < 24) || ( time >=0 && time < 6)) {
                 document.getElementById("may").innerHTML = "Good Night";
             }
         }

@@ -4,6 +4,40 @@
 <head>
     <link rel="stylesheet" href="../css/all.min.css">
     <style>
+            body {
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .container > div {
+        width: 10%;
+    }
+    .container > div:nth-child(2) {
+        text-align: center;
+    }
+    .user,
+    .computer {
+        flex: 1;
+        font-size: 100px;
+    }
+    .user {
+        text-align: right;
+        color: skyblue;
+    }
+    .computer {
+        text-align: left;
+        color: orange;
+    }
+    #result {
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+    }
+    button {
+        font-size: 30px;
+    }
     </style>
 </head>
 
