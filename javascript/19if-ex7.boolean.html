@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    console.log("boolean");
+
+    var a = true;
+    if (a) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+    
+    console.log("number");
+    // number type의 경우 0이 아니면 true
+    var b = 3;
+    if (b) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+        console.log("string");
+        // 빈 string이 아니면 true (space만 있어도 string임!)
+        var c = " ";
+        if (c) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+        console.log("undefined");
+    var d; // 값을 지정하지 않을 경우 undefined -->false
+    if (d) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+</script>
+</body>
+</html>

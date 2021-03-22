@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    Greeting <input type="">
+    <br>
+    <button onclick="click()">Click me !</button>
+    <p id="may">sdf</p>
+    <script>
+
+        function click(parmas) {
+            var time = document.querySelector("input").value;
+            time = Number(time);
+
+            if (time >= 90) {
+                document.getElementById("may").innerHTML = "Good Morning";
+            } else if (time >= 80) {
+                document.getElementById("may").innerHTML = "Good Evening";
+            } else {
+                document.getElementById("may").innerHTML = "Good Night";
+            }
+        }
+    </script>
+</body>
+
+</html>

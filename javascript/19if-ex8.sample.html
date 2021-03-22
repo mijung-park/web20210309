@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+
+    <ul id="result"><!--<li></li>--></ul>
+
+    <script>
+        function add() {
+            var text = document.querySelector("input").value;
+            var ul = document.getElementById("result");
+            // string에서 space 제거
+            text = text.trim();
+
+            //if (text != "") = (text) 
+            if (text) {
+                ul.innerHTML += "<li>" + text + "</li>";
+            } 
+        }
+    </script>
+</body>
+
+</html>

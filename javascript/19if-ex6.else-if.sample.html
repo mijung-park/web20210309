@@ -15,7 +15,7 @@
         var score = document.querySelector("input").value;
         score = Number(score);
 
-        if (score >= 90) {
+        if (score >= 90 && score <= 100) {
             document.getElementById("result").innerHTML = "A학점";
         } else if (score >= 80) {
             document.getElementById("result").innerHTML = "B학점";
