@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+    <input type="text" placeholder="단을 입력하세요">
+    <button onclick="sibodan()">출력</button>
+    <div id="result"></div>
+<script>
+    function sibodan() {
+        var dan = document.querySelector("input").value;
+        Number(dan);
+
+        var txt = "";
+        for (var i = 1; i <= 15; i++) {
+            txt += dan + "X" + i + "=" + (dan * i) + "<br>";
+        }
+        
+        document.getElementById("result").innerHTML = txt;
+    }
+</script>
+</body>
+</html>

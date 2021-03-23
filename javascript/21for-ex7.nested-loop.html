@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result1"></div>
+    <hr>
+    <!-- #result$@2*3 -->
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <script>
+        var star = "";
+        for (var j = 0; j < 5; j++) {
+            for (var i = 0; i <= j; i++) {
+                star += "*"
+
+            }
+            star += "<br>";
+        }
+        document.getElementById("result1").innerHTML = star;
+
+
+        star = "";
+        for (var j = 0; j < 5; j++) {
+            for (var i = 5; i > j; i--) {
+                star += "*"
+
+            }
+            star += "<br>";
+        }
+
+        document.getElementById("result2").innerHTML = star;
+
+
+        star = "";
+        for (var j = 0; j < 5; j++) {
+            for (var k = 0; k < j; k++) {
+                star += "&nbsp;";
+            }
+            for (var i = 5; i > j; i--) {
+                star += "*"
+
+            }
+            star += "<br>";
+        }
+
+        document.getElementById("result3").innerHTML = star;
+
+        star = "";
+        for (var j = 0; j < 5; j++){
+            for (k = 0; k < (4-j); k++) {
+                star += "&nbsp;";
+            }
+            for (i = 0; i <= j; i++) {
+                star += "*"
+            }
+
+            star += "<br>";
+        }
+
+        document.getElementById("result4").innerHTML = star;
+
+    </script>
+</body>
+
+</html>
