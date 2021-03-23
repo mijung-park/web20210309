@@ -59,7 +59,7 @@
             setIcon(user, document.querySelector(".user"));
             setIcon(computer, document.querySelector(".computer"));
 
-            var resultText = "";
+            
             if (user == computer) {
                 resultText = "비겼습니다."
             } else if (user == 1 && computer == 2) {
@@ -68,6 +68,8 @@
                 resultText = "이겼습니다."
             } else if (user == 3 && computer == 1) {
                 resultText = "이겼습니다."
+            } else {
+                resultText = "졌습니다."
             }
             document.getElementById("result").innerHTML = resultText;
         }
