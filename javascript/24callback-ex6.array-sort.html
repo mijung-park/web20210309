@@ -22,13 +22,14 @@
             console.log(param);
         })
 
-
         console.log("------------------------");
+
+        
         arr1.sort(function (x, y) {
             // x가 더 크면 양수, 같으면 0, y가 더 크면 음수
 
             if (x > y) {
-                return -1;
+                return -1; // 반대로 sorting하기 !
             } else if (x < y) {
                 return 1;
             } else {
@@ -39,6 +40,7 @@
         arr1.forEach(function (param) {
             console.log(param);
         })
+        // reverse method를 이용하면 됨! 위의 문은 callback을 이용한 예문!
 
     </script>
 
