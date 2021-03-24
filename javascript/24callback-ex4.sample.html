@@ -17,8 +17,6 @@
     <div id="result"></div>
 
     <script>
-        var x 
-
         function add(a, b) {
             return a + b;
         }
@@ -31,21 +29,19 @@
         }
         function process(op) {
 
-            var x = Number(document.getElementById("input1").value);
-            var y = Number(document.getElementById("input2").value);
+            var o = Number(document.getElementById("input1").value);
+            var j = Number(document.getElementById("input2").value);
 
             var res = 0;
 
             switch (op) {
                 case '+':
-                    res = calc(x, y, add);
+                    res = calc(o, j, add); // add(o,j) -> add(a+b)
                     break;
 
                 case '-':
-                    res = calc(x, y, minus);
+                    res = calc(o, j, minus);
                     break;
-
-
             }
             document.getElementById('result').innerHTML = res;
         }
