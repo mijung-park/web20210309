@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <script>
+        var txt = "";
+        
+        var j = 2;
+        while (j <= 9) {
+
+            var i = 1;
+            while (i <= 9) {
+                txt += j + "X" + i + "=" + (j*i) + "<br>";
+                i++;
+            }
+
+            j++;
+        }
+        document.getElementById("result").innerHTML = txt;
+    </script>
+</body>
+
+</html>
