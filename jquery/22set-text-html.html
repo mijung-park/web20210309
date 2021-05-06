@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#div1").click(function() {
+            $(this).text("<h1>new text</h1>");
+        })
+        $("#div2").click(function() {
+            $(this).html("<h1>new html</h1>");
+        })
+
+        $("#div2").click(function() {
+            $(this).attr("id", "new-id");
+        })
+    })
+</script>
+</head>
+<body>
+<div id="div1">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut esse expedita aliquid eum dicta consectetur, tempore ipsum fugit necessitatibus voluptates quo voluptatum animi? Fugiat ducimus quidem earum delectus recusandae quo?</p>
+</div>
+<div id="div2">
+    <p>Tempore nam vel facere voluptate molestiae temporibus excepturi placeat dolores similique consequuntur nemo, repudiandae non odit. Commodi, minima corporis perspiciatis rerum itaque, suscipit voluptas sunt illo consectetur consequatur, nihil eaque?</p>
+</div>
+</body>
+</html>
