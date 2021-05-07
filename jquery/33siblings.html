@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#head5").siblings().css("color", "blue"); // 모든형제들
+        $("#head5").next().css("background-color", "yellow"); // 바로 다음형제
+        $("#head5").prev().css("background-color", "pink"); // 바로 직전형제
+        $("#head5").nextAll().css("border", "3px solid green"); // 다음에 오는 모든형제들
+        $("#head5").prevAll().css("border", "3px dotted black"); //이전의 모든 형제들
+    });
+</script>
+</head>
+<body>
+    <h1 id="head1">Lorem, ipsum.</h1>
+    <h1 id="head2">Sint, optio.</h1>
+    <h1 id="head3">Rem, veniam.</h1>
+    <h1 id="head4">Maiores, minus.</h1>
+    <h1 id="head5">Blanditiis, consequatur.</h1>
+    <h1 id="head6">Pariatur, quidem?</h1>
+    <h1 id="head7">Quidem, vel.</h1>
+    <h1 id="head8">Veniam, saepe!</h1>
+    <h1 id="head9">Blanditiis, corporis.</h1>
+    <h1 id="head10">Tempore, excepturi.</h1>
+</body>
+</html>
